@@ -5,13 +5,13 @@ from django.contrib.auth.models import User
 class Order(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     STATUSES = (
-        ("Placed", "Placed")
-        ("Accepted", "Accepted")
-        ("Preparing", "Preparing")
-        ("Ready to ship", "Ready to ship")
-        ("Shipped", "Shipped")
-        ("Delivered", "Delivered")
-        ("Canceled", "Canceled")
+        ("Placed", "Placed"),
+        ("Accepted", "Accepted"),
+        ("Preparing", "Preparing"),
+        ("Ready to ship", "Ready to ship"),
+        ("Shipped", "Shipped"),
+        ("Delivered", "Delivered"),
+        ("Canceled", "Canceled"),
 
     )
 
